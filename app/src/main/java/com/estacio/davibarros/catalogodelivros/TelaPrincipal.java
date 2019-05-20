@@ -37,12 +37,12 @@ public class TelaPrincipal extends AppCompatActivity implements View.OnClickList
         switch (v.getId()){
 
             case R.id.btnCadastrar:
-                intent = new Intent(this,TelaCadastrar.class);
+                intent = new Intent(this, TelaCadastrar.class);
                 break;
 
 
             case R.id.btnPesquisar:
-                intent = new Intent(this,TelaPesquisar.class);
+                intent = new Intent(this, TelaPesquisar.class);
                 intent.putExtra("tipo", rdgPesquisarPor.getCheckedRadioButtonId());
                 intent.putExtra("chave", edtPesquisar.getText().toString());
                 break;
@@ -51,4 +51,5 @@ public class TelaPrincipal extends AppCompatActivity implements View.OnClickList
     if(intent!=null){
         startActivity(intent);
     }
+  }
 }
